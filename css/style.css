@@ -21,7 +21,14 @@
 }
 
 main section, footer section{
-    padding: 30px 0;
+    padding: 2rem 0;
+}
+
+.my_btn{
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 25px;
 }
 
 :root{
@@ -55,11 +62,15 @@ header .container li{
     padding: 0 10px;
 }
 
-header .container li a{
+header .container li a:not(.my_btn){
     text-decoration: none;
     color: white;
 }
 
+header .my_btn{
+    color: black;
+    background-color: white;
+}
 
 /* MAIN */
 
@@ -69,30 +80,49 @@ main{
 
 /* JUMBO */
 
-#jumbo .container{
+#jumbo .cards{
     flex-wrap: wrap;
+    margin: 0 -0.5rem;
 }
 
-#jumbo .container .card{
-    width: calc(100% / 3);
-    flex-grow: 0;
+#jumbo .cards .card{
+    width: calc((100% / 3) - 1rem);
+    margin: 0 0.5rem;
+    padding: 10px;
 }
 
-#jumbo .container .cards{
-    width: calc(100% / 2);
-    flex-grow: 1;
+#jumbo .cards .card:first-child{
+    width: calc(((100% / 3) * 2) - 1rem);
 }
 
-#jumbo .container .cards .card{
-    width: calc(100% / 2);
-}
-
-#jumbo .container .card:not(:first-child){
+#jumbo .card:not(:first-child){
     text-align: center;
 }
 
+#jumbo h3{
+    padding-bottom: 1rem;
+}
+
+#jumbo .demo{
+    padding-right: 100px;
+}
+
+#jumbo .app_store{
+    padding: 2rem 0;
+}
+
+#jumbo .my_btn{
+    padding: 5px 30px;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+#jumbo .img_app{
+    align-self: flex-end;
+}
+
 #jumbo .container .cards .card img{
-    width: 50%;
+    width: 75%;
 }
 
 
@@ -109,21 +139,44 @@ main{
 }
 
 #planning .container .col:last-child{
+    width: 50%;
     align-self: flex-end;
 }
 
+#planning .app_developement{
+    width: 70%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#planning .app_developement p{
+    padding: 10px 0;
+}
+
+#planning .app_developement .my_btn{
+    border-radius: 50%;
+}
+
 #planning .container .col .img_planning_1{
-    width: 60%;
+    width: 70%;
 }
 
 #planning .container .col .img_planning_2{
-    width: 50%;
+    width: 60%;
 }
 
 #planning .container .col > div:not(.left) {
     text-align: center;
 }
 
+#planning .left{
+    padding: 50px 30px 0 55px;
+}
+
+#planning .left h3{
+    padding-bottom: 20px;
+}
 
 /* PARTNERS */
 
@@ -131,31 +184,103 @@ main{
     text-align: center;
 }
 
+#partners .row{
+    padding: 20px 10px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+#partners .col{
+    color: white;
+}
+
+#partners .col p{
+    padding-bottom: 15px;
+}
+
+#partners .row:first-child{
+    padding-top: 20px;
+}
+
 #partners .row .col:first-child{
     width: 20%;
 }
+
 #partners .row .col:last-child{
     width: 80%;
     text-align: left;
     align-self: center;
 }
 
-#partners img{
-    width: 100%;
+#partners .img_testimonial_1{
+    background-image: url("../img/testimonial1.jpg");
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+}
+
+#partners .img_testimonial_2{
+    background-image: url("../img/testimonial2.jpg");
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+}
+
+#partners .img_testimonial_3{
+    background-image: url("../img/testimonial3.jpg");
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+}
+
+#partners h2{
+    padding: 20px 0;
+}
+
+#partners .sub_title{
+    padding-bottom: 20px;
 }
 
 /* BENEFITS */
 
 #benefits h2{
     text-align: center;
+    padding-bottom: 30px;
 }
 
 #benefits .container_cards{
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 #benefits .container_cards .card{
-    width: calc(100% / 3);
+    width: calc((100% / 3) - 20px);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+#benefits .number{
+    font-size: 3em;
+}
+
+#benefits h3{
+    padding: 10px 0;
+}
+
+#benefits .card div{
+    padding-top: 20px;
+}
+
+#benefits .card .my_btn{
+    padding: 5px 30px;
+    color: white;
 }
 
 /* ABOUT */
