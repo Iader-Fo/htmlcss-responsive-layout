@@ -20,10 +20,19 @@
     background-color: orange;
 }
 
+main section, footer section{
+    padding: 30px 0;
+}
+
+:root{
+    --primary-color: #0084FD;
+    --primary-color-light: #85ddff;
+}
 
 /* HEADER */
 
 header {
+    background-color: var(--primary-color);
     line-height: 60px;
     position: fixed;
     top: 0;
@@ -118,22 +127,50 @@ main{
 
 /* PARTNERS */
 
+#partners .container{
+    text-align: center;
+}
 
+#partners .row .col:first-child{
+    width: 20%;
+}
+#partners .row .col:last-child{
+    width: 80%;
+    text-align: left;
+    align-self: center;
+}
+
+#partners img{
+    width: 100%;
+}
 
 /* BENEFITS */
 
-#benefits .container{
+#benefits h2{
+    text-align: center;
+}
+
+#benefits .container_cards{
     flex-wrap: wrap;
 }
 
-#benefits .container .card{
+#benefits .container_cards .card{
     width: calc(100% / 3);
 }
 
 /* ABOUT */
 
+#about .row .col:first-child{
+    width: 70%;
+}
 
+#about .row .col:last-child{
+    width: 30%;
+}
 
+#about img{
+    width: 50%;
+}
 
 /* GET STARTED */
 
