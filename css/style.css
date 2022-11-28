@@ -1,0 +1,95 @@
+/* REGOLE GENERALI */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.bordered{
+    border: 1px dashed black;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    background-color: orange;
+}
+
+
+/* HEADER */
+
+header .container{
+    justify-content: space-between;
+}
+
+
+/* MAIN */
+
+/* JUMBO */
+
+#jumbo .container{
+    flex-wrap: wrap;
+}
+
+#jumbo .container .card{
+    width: calc(100% / 3);
+    flex-grow: 0;
+}
+
+#jumbo .container .cards{
+    width: calc(100% / 2);
+    flex-grow: 1;
+}
+
+#jumbo .container .cards .card{
+    width: calc(100% / 2);
+}
+
+/* PLANNING */
+
+#planning .container{
+    width: 768px;
+    margin: auto;
+}
+
+#planning .container .col{
+    width: 50%;
+}
+
+#planning .container .col:last-child{
+    align-self: flex-end;
+}
+
+
+
+/* PARTNERS */
+
+
+
+/* BENEFITS */
+
+#benefits .container{
+    flex-wrap: wrap;
+}
+
+#benefits .container .card{
+    width: calc(100% / 3);
+}
+
+/* ABOUT */
+
+
+
+
+/* GET STARTED */
+
+#get_started .container, footer .container{
+    max-width: 480px;
+    margin: auto;
+    text-align: center;
+}
