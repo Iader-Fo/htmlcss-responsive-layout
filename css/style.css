@@ -36,6 +36,13 @@ main section, footer section{
     --primary-color-light: #85ddff;
 }
 
+/* BODY */
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    line-height: 25px;
+}
+
 /* HEADER */
 
 header {
@@ -87,8 +94,9 @@ main{
 
 #jumbo .cards .card{
     width: calc((100% / 3) - 1rem);
-    margin: 0 0.5rem;
+    margin: 0.5rem 0.5rem;
     padding: 10px;
+    border-radius: 25px;
 }
 
 #jumbo .cards .card:first-child{
@@ -126,7 +134,7 @@ main{
 }
 
 #jumbo .container .cards .card img{
-    width: 75%;
+    width: 85%;
 }
 
 #jumbo .icon{
