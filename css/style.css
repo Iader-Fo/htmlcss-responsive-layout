@@ -1,9 +1,15 @@
-/* REGOLE GENERALI */
+/* RESET */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+
+html{
+    scroll-behavior: smooth;
 }
 
 .flex{
@@ -159,6 +165,7 @@ main{
 #planning{
     background-color: var(--secondary-color);
     padding-top: 5rem;
+    scroll-margin-top: 80px;
 }
 
 #planning .container{
@@ -217,6 +224,10 @@ main{
 }
 
 /* PARTNERS */
+
+#partners{
+    scroll-margin-top: 80px;
+}
 
 #partners .container{
     text-align: center;
@@ -292,6 +303,7 @@ main{
 
 #benefits{
     background-color: var(--secondary-color);
+    scroll-margin-top: 80px;
 }
 
 #benefits h2{
@@ -339,6 +351,7 @@ main{
 
 #about{
     padding: 3rem 0;
+    scroll-margin-top: 80px;
 }
 
 #about .row .col:first-child{
