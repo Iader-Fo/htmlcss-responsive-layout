@@ -287,14 +287,41 @@ main{
 
 #about .row .col:first-child{
     width: 70%;
+    padding: 0 30px;
 }
 
 #about .row .col:last-child{
     width: 30%;
+    padding: 0 80px 0 20px;
 }
 
 #about img{
     width: 50%;
+}
+
+#about h1{
+    font-size: 2.5em;
+}
+
+#about p{
+    padding: 20px 0;
+}
+
+#about .img_about{
+    background-image: url("../img/about.jpg");
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+}
+
+#about h3{
+    padding: 20px 0;
+}
+
+#about .my_btn{
+    color: white;
 }
 
 /* GET STARTED */
@@ -303,4 +330,24 @@ main{
     max-width: 480px;
     margin: auto;
     text-align: center;
+}
+
+#get_started  p{
+    padding: 30px 0;
+}
+
+#get_started .giant{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 0px;
+}
+
+#get_started  .my_btn{
+    padding: 10px 40px;
+}
+
+/* FOOTER */
+
+.container .end{
+    padding-top: 40px;
 }
