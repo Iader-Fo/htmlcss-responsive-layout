@@ -1,6 +1,6 @@
 /* RESET */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,11 +8,11 @@
 
 /* REGOLE GENERALI */
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
@@ -20,23 +20,24 @@ html{
     border: 1px dashed black;
 } */
 
-.container{
+.container {
     max-width: 1000px;
     margin: auto;
     /* background-color: orange; */
 }
 
-main section, footer section{
+main section,
+footer section {
     padding: 2rem 0;
 }
 
-.my_btn{
+.my_btn {
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 25px;
 }
 
-:root{
+:root {
     --primary-color: #0084FD;
     --primary-color-light: #85ddff;
     --secondary-color: #9792e4;
@@ -61,7 +62,7 @@ header {
     z-index: 10;
 }
 
-header .container{
+header .container {
     justify-content: space-between;
     align-items: center;
 }
@@ -70,207 +71,214 @@ header img {
     vertical-align: middle;
 }
 
-header .container li{
+header .container li {
     list-style: none;
     padding: 0 10px;
 }
 
-header .container li a:not(.my_btn){
+header .container li a:not(.my_btn) {
     text-decoration: none;
     color: white;
 }
 
-header .my_btn{
+header .my_btn {
     color: black;
     background-color: white;
 }
+
 /* 
 header .info{
     display: block;
 } */
 
-header .container .hamburger{
+header .container .hamburger {
     display: none;
+    padding-right: 15px;
+    font-size: 1.5em;
+}
+
+.hamburger i{
+    color: white;
 }
 
 /* MAIN */
 
-main{
+main {
     margin-top: 60px;
 }
 
 /* JUMBO */
 
-#jumbo{
+#jumbo {
     padding-bottom: 5rem;
 }
 
-#jumbo .cards{
+#jumbo .cards {
     flex-wrap: wrap;
     margin: 0 -0.5rem;
 }
 
-#jumbo .cards .card{
+#jumbo .cards .card {
     width: calc((100% / 3) - 1rem);
     margin: 0.5rem 0.5rem;
     border-radius: 25px;
     background-color: var(--primary-color-light);
 }
 
-#jumbo .cards .card:first-child{
+#jumbo .cards .card:first-child {
     width: calc(((100% / 3) * 2) - 1rem);
 }
 
-#jumbo .card:not(:first-child){
+#jumbo .card:not(:first-child) {
     text-align: center;
     padding: 10px;
 }
 
-#jumbo h3{
+#jumbo h3 {
     padding-bottom: 1rem;
     color: var(--primary-color);
 }
 
-#jumbo .demo{
+#jumbo .demo {
     padding-right: 40px;
 }
 
-#jumbo .app_store{
+#jumbo .app_store {
     padding: 2rem 0;
 }
 
-#jumbo .my_btn{
+#jumbo .my_btn {
     padding: 5px 30px;
     color: white;
     background-color: var(--primary-color);
 }
 
-#jumbo .app_store i{
+#jumbo .app_store i {
     padding: 0 5px;
 }
 
-#jumbo .img_app{
+#jumbo .img_app {
     align-self: flex-end;
     padding-right: 15px;
 }
 
-#jumbo .container .cards .card img{
+#jumbo .container .cards .card img {
     width: 80%;
 }
 
-#jumbo .icon{
+#jumbo .icon {
     font-size: 3em;
     padding: 10px 0;
     color: var(--primary-color);
 }
 
-#jumbo .col_left{
+#jumbo .col_left {
     padding: 10px;
 }
 
 /* PLANNING */
 
-#planning{
+#planning {
     background-color: var(--secondary-color);
     padding-top: 5rem;
     scroll-margin-top: 80px;
 }
 
-#planning .container{
+#planning .container {
     width: 768px;
     margin: auto;
 }
 
-#planning .container .col:first-child{
+#planning .container .col:first-child {
     width: 50%;
     color: white;
 }
 
-#planning .container .col:last-child{
+#planning .container .col:last-child {
     width: 50%;
     align-self: flex-end;
 }
 
-#planning .app_developement{
+#planning .app_developement {
     width: 70%;
     background-color: white;
     border-radius: 25px;
     padding: 20px;
 }
 
-#planning .app_developement p{
+#planning .app_developement p {
     padding: 10px 0;
 }
 
-#planning .app_developement .arrow{
+#planning .app_developement .arrow {
     margin-top: 20px;
 }
 
-#planning .app_developement .my_btn{
+#planning .app_developement .my_btn {
     border-radius: 50%;
     background-color: var(--secondary-color);
 }
 
-#planning .container .col .img_planning_1{
+#planning .container .col .img_planning_1 {
     width: 70%;
 }
 
-#planning .container .col .img_planning_2{
+#planning .container .col .img_planning_2 {
     width: 60%;
 }
 
-#planning .container .col > div:not(.left) {
+#planning .container .col>div:not(.left) {
     text-align: center;
 }
 
-#planning .left{
+#planning .left {
     padding: 50px 30px 0 55px;
 }
 
-#planning .left h3{
+#planning .left h3 {
     padding-bottom: 20px;
 }
 
 /* PARTNERS */
 
-#partners{
+#partners {
     scroll-margin-top: 80px;
 }
 
-#partners .container{
+#partners .container {
     text-align: center;
 }
 
-#partners .row{
+#partners .row {
     padding: 20px 10px;
     border-radius: 25px;
     margin-bottom: 20px;
     background-color: var(--secondary-color);
 }
 
-#partners .col{
+#partners .col {
     color: white;
 }
 
-#partners .col p{
+#partners .col p {
     padding-bottom: 15px;
 }
 
-#partners .row:first-child{
+#partners .row:first-child {
     padding-top: 20px;
 }
 
-#partners .row .col:first-child{
+#partners .row .col:first-child {
     width: 20%;
 }
 
-#partners .row .col:last-child{
+#partners .row .col:last-child {
     width: 80%;
     text-align: left;
     align-self: center;
 }
 
-#partners .img_testimonial_1{
+#partners .img_testimonial_1 {
     background-image: url("../img/testimonial1.jpg");
     width: 150px;
     height: 150px;
@@ -279,7 +287,7 @@ main{
     border-radius: 50%;
 }
 
-#partners .img_testimonial_2{
+#partners .img_testimonial_2 {
     background-image: url("../img/testimonial2.jpg");
     width: 150px;
     height: 150px;
@@ -288,7 +296,7 @@ main{
     border-radius: 50%;
 }
 
-#partners .img_testimonial_3{
+#partners .img_testimonial_3 {
     background-image: url("../img/testimonial3.jpg");
     width: 150px;
     height: 150px;
@@ -297,59 +305,59 @@ main{
     border-radius: 50%;
 }
 
-#partners h2{
+#partners h2 {
     padding: 20px 0;
     font-size: 2em;
     color: var(--secondary-color);
 }
 
-#partners .sub_title{
+#partners .sub_title {
     padding-bottom: 20px;
 }
 
 /* BENEFITS */
 
-#benefits{
+#benefits {
     background-color: var(--secondary-color);
     scroll-margin-top: 80px;
 }
 
-#benefits h2{
+#benefits h2 {
     text-align: center;
     padding-bottom: 30px;
     color: white;
     font-size: 2em;
 }
 
-#benefits .container_cards{
+#benefits .container_cards {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
 }
 
-#benefits .container_cards .card{
+#benefits .container_cards .card {
     width: calc((100% / 3) - 20px);
     padding: 20px;
     border-radius: 25px;
     background-color: white;
 }
 
-#benefits .number{
+#benefits .number {
     font-size: 3em;
     font-weight: bolder;
-    color: var(--secondary-color);    
+    color: var(--secondary-color);
 }
 
-#benefits h3{
+#benefits h3 {
     padding: 10px 0;
     color: var(--secondary-color);
 }
 
-#benefits .card div{
+#benefits .card div {
     padding-top: 20px;
 }
 
-#benefits .card .my_btn{
+#benefits .card .my_btn {
     padding: 5px 30px;
     color: white;
     background-color: var(--secondary-color);
@@ -357,35 +365,35 @@ main{
 
 /* ABOUT */
 
-#about{
+#about {
     padding: 3rem 0;
     scroll-margin-top: 80px;
 }
 
-#about .row .col:first-child{
+#about .row .col:first-child {
     width: 70%;
     padding: 0 30px;
 }
 
-#about .row .col:last-child{
+#about .row .col:last-child {
     width: 30%;
     padding: 0 80px 0 20px;
 }
 
-#about img{
+#about img {
     width: 50%;
 }
 
-#about h1{
+#about h1 {
     font-size: 2.5em;
     color: var(--secondary-color);
 }
 
-#about p{
+#about p {
     padding: 20px 0;
 }
 
-#about .img_about{
+#about .img_about {
     background-image: url("../img/about.jpg");
     width: 150px;
     height: 150px;
@@ -395,17 +403,17 @@ main{
     position: relative;
 }
 
-#about h3{
+#about h3 {
     padding: 20px 0;
     color: var(--secondary-color);
 }
 
-#about .my_btn{
+#about .my_btn {
     background-color: var(--secondary-color);
     color: white;
 }
 
-#about span{
+#about span {
     color: var(--secondary-color);
     font-size: 3em;
     position: absolute;
@@ -417,57 +425,58 @@ main{
 
 /* GET STARTED */
 
-#get_started{
+#get_started {
     background-color: var(--secondary-color);
 }
 
-#get_started h2{
+#get_started h2 {
     font-size: 2em;
 }
 
-#get_started .container, footer .container{
+#get_started .container,
+footer .container {
     max-width: 480px;
     margin: auto;
     text-align: center;
     color: white;
 }
 
-#get_started  p{
+#get_started p {
     padding: 30px 0;
 }
 
-#get_started .giant{
+#get_started .giant {
     font-size: 3em;
     font-weight: bolder;
     padding-bottom: 0px;
-    color:#fdc15f;
+    color: #fdc15f;
 }
 
-#get_started  .my_btn{
+#get_started .my_btn {
     padding: 10px 40px;
     background-color: white;
     color: var(--secondary-color);
 }
 
-#get_started a{
+#get_started a {
     color: white;
 }
 
-#get_started .my_btn{
+#get_started .my_btn {
     color: var(--secondary-color);
 }
 
 /* FOOTER */
 
-footer{
+footer {
     background-color: #333333;
 }
 
-footer .end{
+footer .end {
     padding-top: 40px;
 }
 
-footer a{
+footer a {
     color: var(--secondary-color);
 }
 
@@ -475,29 +484,70 @@ footer a{
 
 /* TABLET */
 
-@media screen and (max-width: 992px){
-    
-    .container{
+@media screen and (max-width: 992px) {
+
+    .container {
         max-width: 750px;
     }
-}
 
-    header .info{
+    header .info {
         display: none;
-}
-
-    header .container .hamburger{
-    display: block;
-}
-
-
-
-@media screen and (max-width: 768px){
-    
-    .container{
-        max-width: 600px;
     }
+
+    header .container .hamburger {
+        display: block;
+    }
+
+    #jumbo .cards .card:first-child {
+        flex-wrap: wrap;
+    }
+
+    #planning .container {
+        flex-wrap: wrap;
+    }
+    
+    #planning .container .col:first-child {
+        width: 100%;
+    }
+
+    #planning .container .col:last-child {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    
+    #planning .col .left{
+        padding: 65px 112px 30px 116px;
+    }
+    
+    #planning .left h3 {
+        font-size: 2.5em;
+        
+    }
+
+
 }
 
 
 /* SMARTPHONE */
+
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        max-width: 600px;
+    }
+
+    #jumbo .cards .card {
+        width: calc(100% - 1rem);
+    }
+    
+    #jumbo .cards .card:first-child {
+        width: calc(100% - 1rem);
+    }
+        
+}
+
+
