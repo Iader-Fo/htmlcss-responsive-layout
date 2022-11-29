@@ -314,6 +314,7 @@ main{
     background-size: cover;
     background-position: center center;
     border-radius: 50%;
+    position: relative;
 }
 
 #about h3{
@@ -323,6 +324,16 @@ main{
 #about .my_btn{
     color: white;
 }
+
+#about span{
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
 
 /* GET STARTED */
 
