@@ -117,6 +117,10 @@ main{
     background-color: var(--primary-color);
 }
 
+#jumbo .app_store i{
+    padding: 0 5px;
+}
+
 #jumbo .img_app{
     align-self: flex-end;
 }
@@ -125,7 +129,10 @@ main{
     width: 75%;
 }
 
-
+#jumbo .icon{
+    font-size: 3em;
+    padding: 10px 0;
+}
 
 /* PLANNING */
 
@@ -154,8 +161,9 @@ main{
     padding: 10px 0;
 }
 
-#planning .app_developement .my_btn{
+#planning .app_developement .arrow{
     border-radius: 50%;
+    margin-top: 20px;
 }
 
 #planning .container .col .img_planning_1{
