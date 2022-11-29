@@ -10,14 +10,14 @@
     display: flex;
 }
 
-.bordered{
+/* .bordered{
     border: 1px dashed black;
-}
+} */
 
 .container{
     max-width: 1000px;
     margin: auto;
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 main section, footer section{
@@ -27,13 +27,13 @@ main section, footer section{
 .my_btn{
     text-decoration: none;
     padding: 5px 10px;
-    border: 1px solid black;
     border-radius: 25px;
 }
 
 :root{
     --primary-color: #0084FD;
     --primary-color-light: #85ddff;
+    --secondary-color: #9792e4;
 }
 
 /* BODY */
@@ -87,6 +87,10 @@ main{
 
 /* JUMBO */
 
+#jumbo{
+    padding-bottom: 5rem;
+}
+
 #jumbo .cards{
     flex-wrap: wrap;
     margin: 0 -0.5rem;
@@ -95,8 +99,8 @@ main{
 #jumbo .cards .card{
     width: calc((100% / 3) - 1rem);
     margin: 0.5rem 0.5rem;
-    padding: 10px;
     border-radius: 25px;
+    background-color: var(--primary-color-light);
 }
 
 #jumbo .cards .card:first-child{
@@ -105,14 +109,16 @@ main{
 
 #jumbo .card:not(:first-child){
     text-align: center;
+    padding: 10px;
 }
 
 #jumbo h3{
     padding-bottom: 1rem;
+    color: var(--primary-color);
 }
 
 #jumbo .demo{
-    padding-right: 100px;
+    padding-right: 40px;
 }
 
 #jumbo .app_store{
@@ -131,26 +137,38 @@ main{
 
 #jumbo .img_app{
     align-self: flex-end;
+    padding-right: 15px;
 }
 
 #jumbo .container .cards .card img{
-    width: 85%;
+    width: 80%;
 }
 
 #jumbo .icon{
     font-size: 3em;
     padding: 10px 0;
+    color: var(--primary-color);
+}
+
+#jumbo .col_left{
+    padding: 10px;
 }
 
 /* PLANNING */
+
+#planning{
+    background-color: var(--secondary-color);
+    padding-top: 5rem;
+}
 
 #planning .container{
     width: 768px;
     margin: auto;
 }
 
-#planning .container .col{
+#planning .container .col:first-child{
     width: 50%;
+    color: white;
 }
 
 #planning .container .col:last-child{
@@ -170,8 +188,12 @@ main{
 }
 
 #planning .app_developement .arrow{
-    border-radius: 50%;
     margin-top: 20px;
+}
+
+#planning .app_developement .my_btn{
+    border-radius: 50%;
+    background-color: var(--secondary-color);
 }
 
 #planning .container .col .img_planning_1{
@@ -204,6 +226,7 @@ main{
     padding: 20px 10px;
     border-radius: 25px;
     margin-bottom: 20px;
+    background-color: var(--secondary-color);
 }
 
 #partners .col{
@@ -257,6 +280,8 @@ main{
 
 #partners h2{
     padding: 20px 0;
+    font-size: 2em;
+    color: var(--secondary-color);
 }
 
 #partners .sub_title{
@@ -265,9 +290,15 @@ main{
 
 /* BENEFITS */
 
+#benefits{
+    background-color: var(--secondary-color);
+}
+
 #benefits h2{
     text-align: center;
     padding-bottom: 30px;
+    color: white;
+    font-size: 2em;
 }
 
 #benefits .container_cards{
@@ -280,14 +311,18 @@ main{
     width: calc((100% / 3) - 20px);
     padding: 20px;
     border-radius: 25px;
+    background-color: white;
 }
 
 #benefits .number{
     font-size: 3em;
+    font-weight: bolder;
+    color: var(--secondary-color);    
 }
 
 #benefits h3{
     padding: 10px 0;
+    color: var(--secondary-color);
 }
 
 #benefits .card div{
@@ -297,9 +332,14 @@ main{
 #benefits .card .my_btn{
     padding: 5px 30px;
     color: white;
+    background-color: var(--secondary-color);
 }
 
 /* ABOUT */
+
+#about{
+    padding: 3rem 0;
+}
 
 #about .row .col:first-child{
     width: 70%;
@@ -317,6 +357,7 @@ main{
 
 #about h1{
     font-size: 2.5em;
+    color: var(--secondary-color);
 }
 
 #about p{
@@ -335,14 +376,16 @@ main{
 
 #about h3{
     padding: 20px 0;
+    color: var(--secondary-color);
 }
 
 #about .my_btn{
+    background-color: var(--secondary-color);
     color: white;
 }
 
 #about span{
-    color: white;
+    color: var(--secondary-color);
     font-size: 3em;
     position: absolute;
     top: 0;
@@ -353,10 +396,19 @@ main{
 
 /* GET STARTED */
 
+#get_started{
+    background-color: var(--secondary-color);
+}
+
+#get_started h2{
+    font-size: 2em;
+}
+
 #get_started .container, footer .container{
     max-width: 480px;
     margin: auto;
     text-align: center;
+    color: white;
 }
 
 #get_started  p{
@@ -367,14 +419,33 @@ main{
     font-size: 3em;
     font-weight: bolder;
     padding-bottom: 0px;
+    color:#fdc15f;
 }
 
 #get_started  .my_btn{
     padding: 10px 40px;
+    background-color: white;
+    color: var(--secondary-color);
+}
+
+#get_started a{
+    color: white;
+}
+
+#get_started .my_btn{
+    color: var(--secondary-color);
 }
 
 /* FOOTER */
 
-.container .end{
+footer{
+    background-color: #333333;
+}
+
+footer .end{
     padding-top: 40px;
+}
+
+footer a{
+    color: var(--secondary-color);
 }
