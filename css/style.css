@@ -84,6 +84,14 @@ header .my_btn{
     color: black;
     background-color: white;
 }
+/* 
+header .info{
+    display: block;
+} */
+
+header .container .hamburger{
+    display: none;
+}
 
 /* MAIN */
 
@@ -462,3 +470,34 @@ footer .end{
 footer a{
     color: var(--secondary-color);
 }
+
+/* MEDIA QUERY */
+
+/* TABLET */
+
+@media screen and (max-width: 992px){
+    
+    .container{
+        max-width: 750px;
+    }
+}
+
+    header .info{
+        display: none;
+}
+
+    header .container .hamburger{
+    display: block;
+}
+
+
+
+@media screen and (max-width: 768px){
+    
+    .container{
+        max-width: 600px;
+    }
+}
+
+
+/* SMARTPHONE */
